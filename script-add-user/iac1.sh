@@ -5,10 +5,10 @@ echo " *********** "
 
 DIR="/publico"
 if [ -d "$DIR" ]; then
-  ### Take action if $DIR exists ###
+  ### Verifica se existe
   echo "O  ${DIR} ja existe."
 else
-  ###  Control will jump here if $DIR does NOT exists ###
+  ###  Se nao existe entao vai criar.
   mkdir /publico
   echo "O ${DIR} nao existe entao foi criado.  "
 fi
@@ -24,11 +24,6 @@ sec="/sec"
 [ -d "${sec}" ] &&  echo "O diretorio $d existe." || mkdir /sec 
 
 
-#   mkdir /publico
-#mkdir /adm
-#mkdir /ven
-#mkdir /sec
-
 echo " *********** "
 echo " Criando grupos de usuários !_! "
 echo " *********** "
@@ -36,6 +31,7 @@ echo " *********** "
 groupadd GRP_ADM
 groupadd GRP_VEN
 groupadd GRP_SEC
+
 echo "  "
 echo " *********** "
 echo " Criando usuários !_! "
