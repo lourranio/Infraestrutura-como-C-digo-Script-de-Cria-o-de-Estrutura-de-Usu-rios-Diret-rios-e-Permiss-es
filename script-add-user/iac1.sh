@@ -55,7 +55,7 @@ useradd amanda -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
 useradd rogerio -m -s /bin/bash -p $(openssl passwd -crypt Senha123) -G GRP_SEC
 echo "  "
 echo " *********** "
-echo "Especificando permissões dos diretórios...."
+echo " Especificando permissões dos diretórios !_!"
 echo " *********** "
 echo "  "
 
